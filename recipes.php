@@ -35,7 +35,9 @@
             <?php
             error_reporting( E_ALL ); ini_set( 'display_errors', 1 );
 
-            foreach ( array( '001','002','003' ) as 'recipes/$i.php' )
+            foreach ( array( '001','002','003' ) as $i ) {
+                include "recipes/$i.php";
+            }
 
 
               include 'recipes/001.php';
